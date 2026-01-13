@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Journey Tour & Travel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    * {
+  box-sizing: border-box;
+}
+/* Links */
+a:link, a:visited { color: #230863; }
+a:focus, a:hover, a:active { color: #3382f9; }
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  padding-bottom: .2em;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header */
+header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  background-color: #c2cdff;;
+}
+
+/* Top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #565892;
+  font: 1em "Karla";
+  text-transform: uppercase;
+}
+
+/* Navigation bar links */
+.navbar a {
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #b0ccd4;
+  font: 1.2em "Karla";
+}
+
+/* Headers */
+h1 {
+  font: 1.8em "Playfair Display";
+  font-weight:bold;
+  text-transform: uppercase;
+
+}
+h2 {
+  font: 1.8em "Playfair Display";
+}
+
+/* Textboxes */
+p.description {
+  font: 1.1em "Karla";
+}
+.review, p.introduction {
+  font: 1em "Red Hat Display";
+}
+
+/* Location Page */
+.locations {
+  margin-left: 3%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <img src="images/newlogo.png" width="400px">
+</header>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="locations.html">Locations</a>
+  <a href="https://www.instagram.com/">Social Media</a>
+  <a href="https://mail.google.com/mail/u/0/#inbox">Contact Us</a>
+</div>
+
+<!-- Content Container -->
+<div class="container">
+  <div class="side">
+    <h2>About Our Website</h2>
+    <img src="images/plane.jpg" alt=
+    "plane" height="100px">
+    <p class="description">We offer travel plans for the most popular travel locations all over the world, from Italy to Egypt! We hope to enrich your travel experience by picking each location's top cuisine and landmarks so you can post the perfect pictures on social media. We partner with restaurants and hotels all across the world to offer our clients discounted rates. </p>
+    <div class="review">
+      <h3>What our Clients Love:</h3>
+      <p><strong>Linda Brown</strong></p>
+      <img src="images/stars.png" width="100px">
+      <p>Journey Tour & Travel is the best travel planner to exist! They offer great choices for tourists to visit at so many locations. My family and I have never been disappointed by any of the landmarks this website has recommended.</p>
+    </div>
+    <br>
+    <div class="review">
+    <p><strong>Tom Apple</strong></p>
+    <img src="images/stars.png" width="100px">
+    <p>This website is the best. I love how you can keep track of your budget and how they can plan and route out locations for you if you just give them your desired agenda!</p>
+    </div>
+  </div>
+
+  <div class="main">
+    <h1>Popular locations include:</h1>
+    <h2>LONDON, ENGLAND</h2>
+    <p class="description">Looking for a travel spot with a blend of old and new? Visit London.</p>
+    <img src="images/london.png" height=200px>
+    <p class="introduction">London is the capital city and largest city in the United Kingdom. Famous tourist attractions include Beckingham Palace and Big Ben. It is one of the world's most visited destinations, with almost 28 million visitors per year.</p>
+    <div class="learnmore"><a href="https://www.come-to-london.com/london-city-guide/overview-s008">LEARN MORE...</a></div>
+    <br>
+    <h2>PARIS, FRANCE</h2>
+    <p class="description">Looking for a city full of romance and architecture? Visit Paris.</p>
+    <img src="images/paris.jpg" height="200px">
+    <p class="introduction">Paris is the capital city of France. Known for its rich history and iconic landmarks, Paris is the perfect city to visit if you are a romantic. It is even called "the most romantic city in the world." Paris's charming streets and picturesque cafes are the best spots for social media pictures!</p>
+    <div class="learnmore"><a href="https://www.cia-france.com/french-adults-courses/paris-school/to-do-in-paris">LEARN MORE...</a></div>
+    <br>
+    <h2>TOKYO, JAPAN</h2>
+    <p class="description">Looking for a location with a wide range of cultural experiences? Visit Tokyo.</p>
+    <img src="images/tokyo.jpg" height="200px">
+
+    <p class="introduction">Tokyo, the capital city of Japan, is a city full of energy and life. It offers a captivating blend of cuisine and cutting-edge technology. Beyond its neon-lit streets and towering buildings, Tokyo holds rich history, as you can visit ancient temples and traditional stores.</p>
+    <div class="learnmore"><a href="https://www.gotokyo.org/en/index.html">LEARN MORE...</a></div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Want to request a location that we don't have?<p>
+    <p><a href="https://mail.google.com/mail/u/0/#inbox">CONTACT US</a></p>
+</footer>
+
+</body>
+</html>
